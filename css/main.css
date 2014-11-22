@@ -1,0 +1,371 @@
+/*******************************
+GENERAL
+******************************/
+
+
+body{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#wrapper {
+	max-width: 940px;
+	margin: 200px auto;
+	padding: 0 5%;
+}
+
+#info {
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+hr {
+	clear: both;
+}
+
+
+/*******************************
+HEADING
+******************************/
+
+
+header {
+	display: block;
+	position: fixed;
+	margin: 0 auto;
+	padding: 5px 0 0 0;
+	width: 100%;
+	top: 0px;
+	z-index: 1030;
+}
+
+h1 {
+	font-family: 'Sancreek', cursive;
+	font-size: 1.75em;
+	margin: 15px 0 10px 0;
+	font-weight: normal;
+	line-height: 0.8em;
+}
+
+h3 {
+	font-family: 'Poiret One', cursive;
+	font-size: 0.75em;
+	margin: 5px 0 0;
+	font-weight: normal;
+}
+
+#logo {
+	text-align: left;
+	margin: 0;
+}
+
+#logo img {
+	max-width: 3em;
+	display: inline-block;
+	float: left;
+}
+
+
+/*******************************
+NAVIGATION
+******************************/
+
+
+nav {
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0;
+}
+
+nav ul {
+	margin: 0 10px;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 400;
+	padding: 15px 10px;
+}
+
+/*******************************
+FOOTER
+******************************/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	margin: auto 12.5%;
+}
+
+footer li:first-of-type {
+	margin: 10px auto;
+}
+
+footer ul {
+	padding-left: 0;
+}
+
+
+/*******************************
+PAGE: HOME
+******************************/
+
+
+body#home {
+	background-image: url('../images/pizza1.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+section#info {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1em;
+	max-width: 100%;
+	max-height: 100%;
+	position: relative;
+	background-color: #d7a900;
+	border: 2px solid #39275b;
+	opacity: 0.8;
+	padding: 0;
+	margin: 20px 0;
+	text-align: center;
+}
+
+section#info ul {
+	padding: 5px;
+}
+
+section#info li {
+	display: block;
+	min-height: 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px;
+}
+
+section#info li:last-of-type {
+	margin-bottom: 0;
+}
+
+section#info iframe {
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/*******************************
+PAGE: MENU
+******************************/
+
+
+body#menu {
+	background-image: url('../images/pizza-order.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+section.menu {
+	max-width: 940px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	padding: 10px;
+	background-color: #39275b;
+	border: 2px solid #fff;
+	opacity: 0.8;
+	margin: 10px 0;
+}
+
+section.menu h2 {
+	margin: 5px 0 0;
+	font-family: 'Poiret One', cursive;
+	font-size: 1.75em;
+	font-weight: normal;
+	color: #000;
+}
+
+section.menu dt {
+	font-size: 1.5em;
+	font-style: italic;
+	font-variant: small-caps;
+	color: #000;
+}
+
+section.head {
+	max-width: 940px;
+	text-align: center;
+}
+
+section.head dd {
+	margin: 0;
+}
+
+section.head span {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1em;
+	font-style: bold;
+	font-variant: small-caps;
+	background-color: #d7a900;
+	opacity: 0.8;
+}
+
+section#extras {
+	width: 95%;
+}
+
+section#extras dt {
+	float: left;
+}
+
+section#extras dd {
+	text-align: right;
+}
+
+
+/*******************************
+PAGE: ORDER
+******************************/
+
+#add {
+	font-size: 14px;
+	width: 55px;
+	padding: 0;
+	margin: 5px;
+}
+
+
+/*******************************
+PAGE: ABOUT US
+******************************/
+
+
+body#about {
+	background-color: #797385;
+}
+
+section.about article {
+	max-width: 940px;
+	background-color: #39275b;
+	opacity: 0.8;
+	border: 2px solid #d7a900;
+	margin: 5px auto;
+}
+
+section.about img {
+	max-width: 75%;
+	padding: 0 12.5%;
+	border-radius: 75%;
+}
+
+section.about h1 {
+	padding: 25px 0;
+	font-family: 'Poiret One', cursive;
+	font-size: 1.75em;
+	font-weight: normal;
+	text-align: center;
+}
+
+section.about h2 {
+	font-family: 'Poiret One', cursive;
+	font-size: 1.5em;
+	font-weight: normal;
+	padding: 10px;
+}
+
+section.about p {
+	padding: 5px 15px;
+}
+
+section.about p:last-of-type {
+	padding-bottom: 25px;
+}
+
+section.about article img {
+	display: inline-block;
+	padding: 1% 2%;
+	border-radius: 0;
+	float: left;
+}
+
+
+/*******************************
+COLORS
+******************************/
+
+
+body {
+	background-color: #000;
+	color: #fff;
+}
+
+nav a {
+	color: #d7a900;
+}
+
+nav a:visited {
+	color: #d7a900;
+}
+
+a#logo {
+	color: #39275b;
+}
+
+header {
+	background: #d7a900;
+	border-color: #39275b;
+}
+
+nav {
+	background: #39275b;
+}
+
+nav a:hover {
+	opacity: 0.6;
+}
+
+section#info a {
+	color: #39275b;
+}
+
+
+
+/*******************************
+TRANSITIONS
+******************************/
+
+
+section.menu:hover {
+	opacity: 1;
+	-webkit-transition: opacity .5s ease-in-out;
+  	-moz-transition: opacity .5s ease-in-out;
+  	-o-transition: opacity .5s ease-in-out;
+  	transition: opacity .5s ease-in-out;
+  	background-color: #d7a900;
+  	-webkit-transition: background-color .5s ease-in-out;
+  	-moz-transition: background-color .5s ease-in-out;
+  	-o-transition: background-color .5s ease-in-out;
+  	transition: background-color .5s ease-in-out;
+  }
+
+  section#info:hover {
+  	opacity: 1;
+	-webkit-transition: opacity .5s ease-in-out;
+  	-moz-transition: opacity .5s ease-in-out;
+  	-o-transition: opacity .5s ease-in-out;
+  	transition: opacity .5s ease-in-out;
+  }
+

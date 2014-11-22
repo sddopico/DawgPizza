@@ -1,0 +1,101 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Dawg Pizza Co">
+    	<meta name="author" content="S. Dominic Dopico">
+		<title>Dawg Pizza Co.</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster|Ubuntu|Sancreek:400,500,700,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js' type='text/javascript'></script>
+
+	</head>
+	<body id="menu">
+		<header>
+			<a href="index.html" id="logo">
+				<img src="images/dawglogo.png" alt="Dawg Pizza logo">
+				<h1>Dawg Pizza Co.</h1>
+				<h3>Awesome wood-fired pizza with ingredients baked to order.<br />
+				Come in and eat, or call us for delivery!</h3>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="order.html">Order</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section class="menu head">
+				<h1>Dawg Pizza Menu</h1>
+				<dl>
+					<dt>Pizzas:</dt>
+                        <dd>All our pizza are made with hand-thrown thin crust, baked in real wood ovens.</dd>
+                    <dt>Choose from one of these sizes:</dt>
+                    	<dd>Small (12")</dd>
+                    	<dd>Medium (14")</dd>
+                    	<dd>Large (17")</dd>
+				</dl>
+				<h2><span>All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</span></h2>
+				<h2><span>We Deliver! Click <a href="order.html">here</a> to place an order!</span></h2>
+			</section>
+			<section class="menu meat">
+			</section>
+    		<section class="menu veg">
+    		</section>
+	    	<section class="menu" id="extras">
+	    	</section>	
+		</div>
+		<script id='meat-template' type='text/template'>
+		<h2>Meat Pies:</h2>
+        	<% for (var i = 0; i < com.dawgpizza.menu.pizzas.length; i++) { %>
+                <dl>
+                	<dt> <%= com.dawgpizza.menu.pizzas[i].name %> </dt>
+                		<dd> <%= com.dawgpizza.menu.pizzas[i].description %>  <%= com.dawgpizza.menu.pizzas[i].prices %> </dd>
+                </dl>
+            <% } %>
+        </script>
+        <script id='veg-template' type='text/template'>
+        <h2>Vegetarian Pies:</h2>
+        	<% for (var i = 0; i < com.dawgpizza.menu.vegetarian.length; i++) { %>
+                <dl>
+                	<dt> <%= com.dawgpizza.menu.vegetarian[i].name %> </dt>
+                		<dd> <%= com.dawgpizza.menu.vegetarian[i].description %>  <%= com.dawgpizza.menu.vegetarian[i].prices %> </dd>
+                </dl>
+            <% } %>
+        </script>
+        <script id='extras-template' type='text/template'>
+        <h2>Drinks</h2>
+        	<% for (var i = 0; i < com.dawgpizza.menu.drinks.length; i++) { %>
+                <dl>
+                	<dt> <%= com.dawgpizza.menu.drinks[i].name %> </dt>
+                		<dd> <%= com.dawgpizza.menu.drinks[i].price %> </dd>
+                </dl>
+            <% } %>
+        <h2>Desserts</h2>
+        	<% for (var i = 0; i < com.dawgpizza.menu.desserts.length; i++) { %>
+                <dl>
+                	<dt> <%= com.dawgpizza.menu.desserts[i].name %> </dt>
+                		<dd> <%= com.dawgpizza.menu.desserts[i].price %> </dd>
+               	</dl>
+            <% } %>
+        </script>
+		<hr id="menu" />
+		<footer>
+				<ul>
+					<li><a href="https://twitter.com/DawgPizzaSea" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @DawgPizzaSea</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+					<li>&copy; Dawg Pizza Co 2014</li>
+					<li>Call us for delivery: 206-555-1212</li>
+				</ul>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="js/menu.js"></script>
++       <script src="js/site.js"></script>
+	</body>
+</html>

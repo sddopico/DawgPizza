@@ -1,0 +1,158 @@
+/*******************************
+TABLET
+******************************/
+
+
+
+@media screen and (min-width: 480px) {
+
+
+
+
+}
+
+
+
+/*******************************
+DESKTOP
+******************************/
+
+
+
+@media screen and (min-width: 768px) {
+
+
+	/*******************************
+	NAVIGATION
+	******************************/
+
+
+	nav {
+		background: none;
+		float: right;
+		font-size: 1.5em;
+		margin-right: 2%;
+		margin-top: 0;
+		text-align: right;
+		width: 45%;
+	}
+
+	nav li {
+		background: #39275b;
+		border-radius: 10%;
+	}
+
+	nav a {
+		padding: 10px;
+		margin-bottom: 5px;
+	}
+
+	nav a:hover {
+		color: #39275b;
+		opacity: 1;
+	}
+
+
+	/*******************************
+	HEADER
+	******************************/
+
+
+	a#logo {
+		float: none;
+		margin-left: 5%;
+		text-align: left;
+		width: 45%
+	}
+
+	a#logo h1 {
+		font-size: 2em;
+	}
+
+	a#logo h3 {
+		font-size: 0.825em;
+		margin-bottom: 0;
+	}
+
+	header {
+		border-bottom: 5px solid #39275b;
+		margin-bottom: 40px;
+	}
+
+	a#logo img {
+		max-width: 8em;
+	}
+
+
+	/*******************************
+	HOME
+	******************************/
+
+
+	section#info {
+		font-size: 1.5em;
+	}	
+
+	section#info li {
+		padding-left: 0;
+	}
+
+
+	/*******************************
+	MENU
+	******************************/
+
+
+	section.menu {
+		max-width: 45%;
+		height: 100%;
+	}
+
+	section.meat {
+		margin-right: 1.25%
+	}
+
+	section.veg {
+		margin-left: 1.25%
+	}
+
+	section.head {
+		min-width: 94.5%;
+		height: auto;
+	}
+
+	section#extras {
+		width: 100%;
+		margin-left: 25%;
+	}
+
+
+
+	/*******************************
+	ABOUT US
+	******************************/
+
+
+	section.about img {
+		max-width: 25%;
+		padding: 0 37.5%;
+	}
+
+
+
+
+	/*******************************
+	TRANSITIONS
+	******************************/
+
+	nav a:hover {
+		background-color: #d7a900;
+  		-webkit-transition: background-color .5s ease-in-out;
+  		-moz-transition: background-color .5s ease-in-out;
+  		-o-transition: background-color .5s ease-in-out;
+  		transition: background-color .5s ease-in-out;
+	}
+
+
+}
+

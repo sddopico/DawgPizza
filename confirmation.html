@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Dawg Pizza Co">
+    	<meta name="author" content="S. Dominic Dopico">
+		<title>Dawg Pizza Co.</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster|Ubuntu|Sancreek:400,500,700,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+	</head>
+	<body id="menu">
+		<header>
+			<a href="index.html" id="logo">
+				<img src="images/dawglogo.png" alt="Dawg Pizza logo">
+				<h1>Dawg Pizza Co.</h1>
+				<h3>Awesome wood-fired pizza with ingredients baked to order.<br />
+				Come in and eat, or call us for delivery!</h3>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="order.html">Back To Order</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="info">
+				<p>Enter your name, address, and phone number below and click submit to finalize your order.</p>
+				<form action='http://dawgpizza.com/orders/' method='POST'>
+					<label for='name'>Name:</label><br>
+					<input id='name' type='text' value='name'><br>
+					<label for='address1'>Address1:</label><br>
+					<input id='address1' type='text' value='address1'><br>
+					<label for='address2'>Address2:</label><br>
+					<input id='adress2' type='text' value='address2'><br>
+					<label for='zip'>Zip:</label><br>
+					<input id='zip' type='text' value='zip'><br>
+					<label for='phone'>Phone:</label><br>
+					<input id='phone' type='text' value='phone'><br>
+					<input type='submit' value='Submit' name='cart'>
+				</form>
+				<button class='seeing'>See my cookie</button>
+			</section>
+		</div>
+		<hr>
+		<footer>
+				<ul>
+					<li><a href="https://twitter.com/DawgPizzaSea" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @DawgPizzaSea</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+					<li>&copy; Dawg Pizza Co 2014</li>
+					<li>Call us for delivery: 206-555-1212</li>
+				</ul>
+		</footer>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="js/checkout.js"></script>
+	</body>
+</html>
